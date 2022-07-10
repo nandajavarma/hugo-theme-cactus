@@ -3,11 +3,11 @@
   <div class="content" itemprop="articleBody">
     {{ if (eq .Type "tags")}}
     <div id="tag-cloud">
-      {{ if (eq (len .Data.Terms) 0) }}
-      <div class="tag-cloud-title">
-        No tags
-      </div>
-      {{ end }}
+      <!-- {{ if (eq (len .Data.Terms) 0) }} -->
+      <!-- <div class="tag-cloud-title"> -->
+      <!--   No tags -->
+      <!-- </div> -->
+      <!-- {{ end }} -->
       <div class="tag-cloud-tags">
         {{ $AllRegularPagesCount := len .Site.RegularPages }}
         {{ range $elem := .Data.Terms.Alphabetical }}
